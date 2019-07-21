@@ -77,7 +77,7 @@ func (s *Server) initialize(ctx context.Context, params *protocol.ParamInitializ
 			DefinitionProvider:         true,
 			TypeDefinitionProvider:     true,
 			ImplementationProvider:     true,
-			DocumentFormattingProvider: true,
+			DocumentFormattingProvider: false,
 			DocumentSymbolProvider:     true,
 			ExecuteCommandProvider: protocol.ExecuteCommandOptions{
 				Commands: options.SupportedCommands,
